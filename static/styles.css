@@ -14,8 +14,8 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(var(--background2)),
-    url("/static/wood.avif");
+  background: linear-gradient(var(--background2)),
+    url("/static/wood.avif")repeat fixed 100%;
   background-position: center;
   background-size: cover;
   padding-left: 8%;
@@ -178,11 +178,48 @@ h5 {
   text-shadow: 0 0 5px #999;
 }
 
-.about {
-  height: 100vh;
-  width: auto;
-  background-image: linear-gradient( to top, var(--background3)),
-  url("/static/wood.avif");
+.margin {
+  margin: 75% 0;
+}
+
+.parallax-inner {
+  font-size: 500px;
+  text-align: center;
+  letter-spacing: 3px;
+  padding-top: 10%;
+  padding-bottom: 50%;
+}
+
+.parallax1 {
+  background: url("/static/coffee.png") repeat fixed 100%;
   background-position: center;
   background-size: cover;
+}
+
+.parallax2 {
+  background: url("/static/tea.jpeg") repeat fixed 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax3 {
+  background: url("/static/books.jpeg") repeat fixed 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax4 {
+  background: url("/static/blackcup.avif") repeat fixed 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.page {
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  scroll-behavior: smooth;
+  transition: all 0.45s;
 }
