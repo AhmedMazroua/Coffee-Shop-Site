@@ -1,3 +1,4 @@
+//scrolls to desired page when clicked
 document.addEventListener('DOMContentLoaded', function() {
     var scrollLinks = document.querySelectorAll('.navbar ul li a');
     
@@ -16,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     });
+  });
+
+  //sticks navbar to top of screen when scrolling
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", function () {
+    header.classList.toggle("sticky", window.scrollY > 100);
   });
   
   
