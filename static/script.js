@@ -24,5 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 100);
   });
-  
+
+  //scrolls to desired page
+  function scrollAbout(location) {
+    const aboutSection = document.getElementById(location);
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  }
   
