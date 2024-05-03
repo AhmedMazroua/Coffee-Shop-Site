@@ -183,8 +183,23 @@ h5 {
   text-shadow: 0 0 5px #999;
 }
 
-.card p {
+.image {
+  display: flex;
+  align-self: left;
+  padding-left: 0;
+  transform: scale(.5);
+  width: 850px;
+}
+
+.page-text {
+  font-size: large;
   text-shadow: 0 0 5px #999;
+  text-align: left;
+  display: flex;
+  float: left;
+  width: 35%;
+  padding-left: 60%;
+  margin-top: 0;
 }
 
 .margin {
@@ -232,13 +247,6 @@ h5 {
   scroll-behavior: smooth;
   transition: all 0.45s;
 }
-
-
-
-
-
-
-
 
 @media (max-width: 1580px) {
   .card {

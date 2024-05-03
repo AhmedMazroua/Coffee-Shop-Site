@@ -30,4 +30,3 @@ document.addEventListener('DOMContentLoaded', function() {
     const aboutSection = document.getElementById(location);
     aboutSection.scrollIntoView({ behavior: 'smooth' });
   }
-  
