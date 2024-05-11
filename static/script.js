@@ -30,3 +30,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const aboutSection = document.getElementById(location);
     aboutSection.scrollIntoView({ behavior: 'smooth' });
   }
+
+  const nav = document.getElementById('header');
+window.onscroll = function () { 
+  if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
+        header.classList.add("nav-colored");
+        header.classList.remove("nav-transparent");
+    } 
+    else {
+        header.classList.add("nav-transparent");
+        header.classList.remove("nav-colored");
+    }
+};
+
