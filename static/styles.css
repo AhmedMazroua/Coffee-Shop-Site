@@ -19,7 +19,7 @@
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .nav-colored{
+  .nav-colored {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
@@ -95,10 +95,10 @@ nav ul li a {
   color: #fff;
   font-size: var(--icon-size);
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: goldenrod;
   font-size: large;
-  transition: ease .45s;
+  transition: ease 0.45s;
 }
 
 .row {
