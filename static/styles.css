@@ -95,6 +95,11 @@ nav ul li a {
   color: #fff;
   font-size: var(--icon-size);
 }
+nav ul li a:hover{
+  color: goldenrod;
+  font-size: large;
+  transition: ease .45s;
+}
 
 .row {
   display: flex;
@@ -201,7 +206,7 @@ h5 {
   display: flex;
   align-self: left;
   padding-left: 0;
-  transform: scale(0.5);
+  transform: scale(0.75);
   width: 850px;
 }
 
